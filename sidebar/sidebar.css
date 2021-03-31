@@ -1,0 +1,44 @@
+* {
+  font-family: 'Comic Sans MS';
+}
+
+body {
+  background-color: #F4EDD4;
+  color: #745D4A;
+}
+
+h1 {
+  font-style: italic;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background: white;
+  padding: 4px;
+  font-size: 12px;
+  margin: 4px 8px;
+  cursor: pointer;
+  border-color: #745D4A;
+  border-style: dotted;
+  border-radius: 12px;
+  padding: 6px 8px;
+}
+
+.button:hover {
+}
+
+.refresh {
+  background-color: #c7e4ec;
+}
+
+.user {
+  display: block;
+}
+
+.user:hover {
+  background: #82CA9C;
+}

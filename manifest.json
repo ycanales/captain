@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "captain",
+	"description": "description",
+	"version": "0.0.1",
+	"icons": {
+		"64": "icons/icon.png"
+	},
+	"background": {
+		"scripts": [
+			"background_script.js"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.atlassian.net/secure/RapidBoard*"
+			],
+			"js": [
+				"content_script.js"
+			]
+		}
+	],
+	"sidebar_action": {
+		"default_title": "Captain",
+		"default_panel": "sidebar/sidebar.html",
+		"default_icon": "icons/icon.png"
+	},
+	"options_ui": {
+		"page": "options/index.html"
+	},
+	"permissions": ["activeTab", "storage", "notifications", "tabs"]
+}
